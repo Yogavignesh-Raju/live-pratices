@@ -1,0 +1,144 @@
+:root {
+    ---primary: #ff4b2a;
+    --secondary: #ff416c;
+    --light: #fff;
+    ---gray:#f5f5f5;
+    ---shadow:5px 5px 5px rgba(0,0,0,0.5)
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: var(--light);
+    text-decoration: none;
+
+}
+nav {
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    max-width: 80%;
+    background: linear-gradient(to right, var(---primary), var(--secondary));
+
+
+}
+
+header {
+    background: linear-gradient(to right, var(---primary), var(--secondary));
+    font-size: large;
+   top: 0;
+   left: 0;
+   width: 100%;
+    position: fixed;
+
+    
+}
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+}
+.hero{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--light);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.hero h1{
+    font-size: 3rem;
+}
+.hero p{
+    font-size: 1rem;
+}.hero a{
+    background-color: var(---primary);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+}
+.features{
+    background-color: var(---gray);
+    padding: 5rem;
+ 
+}
+.features-container{
+    display: grid;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+     max-width: 1200px;
+
+}
+.feature-card{
+    background-color: var(--light);
+    text-align: center;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(---shadow);
+    
+   
+
+}
+.feature-card h3{
+    color: var(---primary);
+}
+.dish h3{
+    color: var(---primary);
+}
+#heading{
+    display: flex;
+    justify-content: center;
+}
+.dish-menu{
+    display: grid;
+    flex-wrap: wrap;
+    margin: 5px;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+     max-width: 1200px;
+
+}
+.dish-card{
+    background-color: var(--light);
+    text-align: center;
+    border-radius: 15px;
+    padding: 0rem;
+    box-shadow: var(---shadow);
+    height: 350px;
+    
+    
+}
+.dish{
+    padding: 1rem;
+    
+}
+.dish-image{
+    display: flex;
+    height: 200px;
+    border-image: 50px;
+
+    
+}
+.dish-info{
+    display: flex;
+    justify-content: left;
+    font-size: medium;
+    text-align: left;
+
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+
+    
